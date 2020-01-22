@@ -1,14 +1,15 @@
 {
-    "manifest_version": 2,
-   
-    "name": "Ad Highlighter",
-    "version": "0.1.0",
-    "description": "Makes Google ads more prominent",
-   
-    "content_scripts": [{
+  "manifest_version": 2,
+
+  "name": "Ad Highlighter",
+  "version": "0.2.0",
+  "description": "Hides Google ads and commercial units",
+
+  "content_scripts": [
+    {
       "css": ["styles.css"],
       "matches": ["*://www.google.com/*"],
       "run_at": "document_start"
-    }]
-   
-  }
+    }
+  ]
+}
